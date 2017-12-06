@@ -188,7 +188,7 @@ class DateRangePicker extends React.Component {
     const { onFocusChange, withPortal, withFullScreenPortal } = this.props;
 
     if (focusedInput) {
-      const moveFocusToDayPicker = withPortal || withFullScreenPortal || this.isTouchDevice;
+      const moveFocusToDayPicker = withPortal || withFullScreenPortal;
       if (moveFocusToDayPicker) {
         this.onDayPickerFocus();
       } else {
